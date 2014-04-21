@@ -53,13 +53,26 @@ public class AIOne extends AI {
 	
 	private float getAngle(Point p1, Point p2) {
 		
-		float angle = (float) Math.toDegrees(Math.atan2(p2.x - p1.x, p2.y - p1.y));
+		double a = p2.y > p1.y ? p2.y - p1.y : p1.y - p2.y;
+		double b = p2.x > p1.x ? p2.x - p1.x : p1.x - p2.x; 
+		double c = Math.sqrt(a*a+b*b);
 		
-		if(angle < 0) {
-			angle += 360;
-		}
+		double q = (a*a) / c;
+		double p = c - q;
 		
-		return angle;
+		double h = Math.sqrt(p*q);
+		
+		double alpha = Math.toDegrees(Math.atan(h/p));
+		
+//		float angle = (float) Math.atan((p2.y-p1.y)/(p2.x-p1.x)); 
+//		
+//		angle = (float) Math.toDegrees(Math.atan2(p2.x - p1.x, p2.y - p1.y));
+//		
+//		if(angle < 0) {
+//			angle += 360;
+//		}
+		
+		return (float) alpha;
 	}
 
 	@Override
