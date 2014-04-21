@@ -5,7 +5,7 @@
 	<classpathentry kind="lib" path="libs/ai.jar"/>
 	<classpathentry kind="lib" path="libs/ai-libs/ai_libs.jar">
 		<attributes>
-			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="AIClient/libs/ai-libs/native"/>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="de.s0533197.AIClient/libs/ai-libs/native"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>

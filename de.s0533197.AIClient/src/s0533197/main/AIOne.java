@@ -32,12 +32,12 @@ public class AIOne extends AI {
 	private float seek(Point goal) {
 		
 		// the casting is okay because it doesnt have to be 100% exact
-		float goalAngle = getAngle(goal, new Point((int) info.getX(), (int) info.getY()));
+		float goalAngle = getAngle(new Point((int) info.getX(), (int) info.getY()), goal);
 		
 		float currentAngle = getOrientationAsGrade();
 
 		// TODO remove
-//		printSpeed(new Point((int) info.getX(), (int) info.getY()), goal, goalAngle, currentAngle);
+		printSpeed(new Point((int) info.getX(), (int) info.getY()), goal, goalAngle, currentAngle);
 		
 
 		if (goalAngle > currentAngle
