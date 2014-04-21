@@ -74,14 +74,6 @@ public class AIOne extends AI {
 			alpha += 270;
 		}
 		
-//		float angle = (float) Math.atan((p2.y-p1.y)/(p2.x-p1.x)); 
-//		
-//		angle = (float) Math.toDegrees(Math.atan2(p2.x - p1.x, p2.y - p1.y));
-//		
-//		if(angle < 0) {
-//			angle += 360;
-//		}
-		
 		return (float) alpha;
 	}
 
