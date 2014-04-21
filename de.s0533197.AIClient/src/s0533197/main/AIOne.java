@@ -37,7 +37,7 @@ public class AIOne extends AI {
 		float currentAngle = getOrientationAsGrade();
 
 		// TODO remove
-		printSpeed(new Point((int) info.getX(), (int) info.getY()), goal, goalAngle, currentAngle);
+//		printSpeed(new Point((int) info.getX(), (int) info.getY()), goal, goalAngle, currentAngle);
 		
 
 		if (goalAngle > currentAngle
